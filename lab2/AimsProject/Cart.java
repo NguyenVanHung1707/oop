@@ -5,16 +5,16 @@ public class Cart {
     public static final int MAX_NUMBERS_ORDERED = 20;
     private List<DigitalVideoDisc> itemsOrdered = new ArrayList<>();
 
-    // hàm thêm 1 đơn hàng vào giỏ
+    // Function to add an order to the cart
     public void addDigitalVideoDisc(DigitalVideoDisc disc) {
         if (itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
             itemsOrdered.add(disc);
         } else {
-            System.out.println("Không thể mua thêm,vượt quá số lượng cho phép!");
+            System.out.println("Cannot add more items, exceeds maximum allowed quantity!");
         }
     }
 
-    // hàm xóa 1 đơn hàng khỏi giỏ
+    // Function to remove an order from the cart
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         if (itemsOrdered.remove(disc)) {
             System.out.println("Removed: " + disc.getTitle());
@@ -23,7 +23,7 @@ public class Cart {
         }
     }
 
-    // hàm tính tổng tiền
+    // Total cost
     public float totalCost() {
         float total = 0;
         for (DigitalVideoDisc disc : itemsOrdered) {
