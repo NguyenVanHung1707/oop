@@ -14,6 +14,7 @@ public class Cart {
         }
     }
 
+
     // Function to remove an order from the cart
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         if (itemsOrdered.remove(disc)) {
@@ -22,7 +23,7 @@ public class Cart {
             System.out.println("DVD not found in cart.");
         }
     }
-
+//hello hung
     // Total cost
     public float totalCost() {
         float total = 0;
