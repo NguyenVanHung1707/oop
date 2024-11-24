@@ -13,8 +13,20 @@ public class Cart {
             System.out.println("Cannot add more items, exceeds maximum allowed quantity!");
         }
     }
-
-
+    public void addDigitalVideoDisc(DigitalVideoDisc[] dvdList) {
+        if (itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
+            itemsOrdered.add(disc);
+        } else {
+            System.out.println("Cannot add more items, exceeds maximum allowed quantity!");
+        }
+    }
+    public void addDigitalVideoDisc(DigitalVideoDisc dvd1, DigitalVideoDisc dvd2) {
+        if (itemsOrdered.size() < MAX_NUMBERS_ORDERED) {
+            itemsOrdered.add(disc);
+        } else {
+            System.out.println("Cannot add more items, exceeds maximum allowed quantity!");
+        }
+    }
     // Function to remove an order from the cart
     public void removeDigitalVideoDisc(DigitalVideoDisc disc) {
         if (itemsOrdered.remove(disc)) {
@@ -23,7 +35,7 @@ public class Cart {
             System.out.println("DVD not found in cart.");
         }
     }
-//hello hung
+
     // Total cost
     public float totalCost() {
         float total = 0;
