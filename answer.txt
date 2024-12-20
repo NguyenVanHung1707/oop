@@ -1,0 +1,1 @@
+Nếu ngoại lệ không được bất kỳ phương thức nào trong ngăn xếp gọi bắt, chương trình sẽ bị dừng đột ngột. Điều này có thể dẫn đến mất dữ liệu, các hoạt động chưa hoàn thành, hoặc ứng dụng không phản hồi. Người dùng có thể gặp phải các lỗi bất ngờ và không nhận được thông báo lỗi về vấn đề xảy ra. Lập trình viên sẽ khó xác định nguồn gốc của vấn đề và gỡ lỗi chương trình.
